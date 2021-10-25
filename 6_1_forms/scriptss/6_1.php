@@ -6,8 +6,10 @@
   </head>
   <body>
     <h3>Dane użytkownika</h3>
-    <form  action="script_1.php" method="post">
-      <input type="text" name="name" placeholder="Podaj imię">
+    <form  action="script_1.php" method="post"><br>
+      <input type="text" name="name" placeholder="Podaj imię"><br>
+      <input type="color" name="color">wybierz kolor<br><br>
+      <input type="text" name="nationality" placeholder="Podaj narodowość">
       <input type="submit" value="Zatwierdź" >
 
     </form>
