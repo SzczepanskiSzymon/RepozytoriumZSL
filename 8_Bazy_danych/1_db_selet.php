@@ -15,8 +15,8 @@
     echo <<<USER
     id: $user[id]<br>
     imię i nazwisko: $user[name] $user[surename]<br>
-    Data urodzenia: $user[birthday]<br>
-    Data utworzenia użytkownika: $user[create_date]<br>
+    Data urodzenia: $user[bithdate]<br>
+    Data utworzenia użytkownika: $user[crdate]<br>
     <hr>
     USER;
   }
