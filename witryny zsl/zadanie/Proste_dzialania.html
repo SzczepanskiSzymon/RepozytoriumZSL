@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3><b>PROSTE DZIAŁANIA</b></h3>
+    Podaj pierwszą liczbę <input type="number" id="a"><br><br>
+    Podaj drugą liczbę <input type="number" id="b"><br><br>
+    <button id="dod">DODAWANIE</button> <button id="odj">ODEJMOWANIE</button> <button id="mng">MNOŻENIE</button> <button id="dziel">DZIELENIE</button>
+    <div id="wym">
+
+    </div>
+    <script>
+      var wym=document.getElementById("wym");
+      //dodawanie
+      dod.onclick=function(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        if (a=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else if (b=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else {
+          da=parseFloat(a);
+          db=parseFloat(b);
+          var plus=da+db;
+          wym.innerHTML=plus;
+        }
+        }
+
+      //odejmowanie
+      odj.onclick=function(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        if (a=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else if (b=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else {
+        da=parseFloat(a);
+        db=parseFloat(b);
+        var minus=da-db;
+        wym.innerHTML=minus;
+      }
+      }
+      //mnożenie
+      mng.onclick=function(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        if (a=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else if (b=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else {
+        da=parseFloat(a);
+        db=parseFloat(b);
+        var mnoz=da*db;
+        wym.innerHTML=mnoz;
+      }
+      }
+      //dielenie
+      dziel.onclick=function(){
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        if (a=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else if (b=="") {
+          wym.innerHTML='podaj obie liczby';
+        }
+        else if (b==0) {
+          wym.innerHTML='Nie można dzielić przez 0';
+        }
+        else {
+        da=parseFloat(a);
+        db=parseFloat(b);
+        var dzielo=da/db;
+        wym.innerHTML=dzielo;
+      }
+      }
+
+    </script>
+  </body>
+</html>
